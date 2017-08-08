@@ -31,7 +31,9 @@ import com.haulmont.cuba.core.entity.annotation.OnDelete;
 import com.haulmont.cuba.core.global.DeletePolicy;
 import java.util.Set;
 import javax.persistence.OneToMany;
+import com.haulmont.chile.core.annotations.NamePattern;
 
+@NamePattern("%s %s|date,customer")
 @Table(name = "SALES_ORDER")
 @Entity(name = "sales$Order")
 public class Order extends StandardEntity {
