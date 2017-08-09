@@ -37,6 +37,7 @@
             <properties include=".*"/>
         </filter>
         <table id="ordersTable"
+               multiselect="true"
                width="100%">
             <actions>
                 <action id="create"/>
